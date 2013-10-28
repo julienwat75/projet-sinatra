@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20131024155808) do
   create_table "users", force: true do |t|
     t.string "nom"
     t.string "lieu"
+    t.date   "duedate"
   end
 
 end
