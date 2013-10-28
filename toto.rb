@@ -25,7 +25,8 @@ end
 
 get '/' do
 
-  erb:accueil
+erb:accueil
+
   
 
 end
