@@ -1,17 +1,22 @@
 require 'sinatra'
 require 'shotgun'
-
+require 'pry'
 require "sinatra/activerecord"
 
 set :database, "sqlite3:///foo.sqlite3"
 
 class User < ActiveRecord::Base
+
+  def late?
+    Date.today > duedate
+  end
+
 end
 
 
 get '/hi' do
 
-erb:formulaire
+  erb :formulaire
 
 end
 
@@ -19,7 +24,7 @@ end
 
 get '/' do
 
-erb:accueil
+erb :accueil
 
   
 

@@ -8,6 +8,7 @@
 <body>
 
 
+
 <div class="row">
      <div class="small-6 columns" style="background:grey;">
 
@@ -56,7 +57,16 @@
 
      
 
-     <li Class='red'><%= user.duedate %></li>
+     <li Class='red'>
+
+     	            <% if user.late? %>
+                     <%= user.duedate %>
+                      <% end %>
+
+
+
+
+                 </li>
 
     </div>
   </div>
