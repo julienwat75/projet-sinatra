@@ -11,13 +11,7 @@ end
 
 get '/hi' do
 
-"<form action='/save' method='post'>
- <input type='text' name='nom'/>
- <button type='submit'> envoyer </button>
-
-
-
-</form>"
+erb:formulaire
 
 end
 
