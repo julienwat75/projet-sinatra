@@ -6,24 +6,15 @@
 
 <h1> formulaire</h1> 
 
-<form  method='post'>
-
-<input type="hidden" name="_method" value="put" /> 
-    
-
- <input type='text' name='nom' >
-  
- <button type='submit'> envoyer </button>
+<form action="/<%= @user.id %>" method="post" id="edit">  
+    <input type="hidden" name="_method" value="put">  
+    <textarea name="nom"><%= @user.nom %></textarea>  
+     
+    <input type="submit">  
+  </form>  
 
 
 
-
- 
-
-
-
-
-</form>
 
 </body>
 

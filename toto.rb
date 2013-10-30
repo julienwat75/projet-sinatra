@@ -49,25 +49,15 @@ end
     end
 
 
-put '/edit/:id' do
- 
-  
- @user = User.find(params[:id])
-  
-  #@user.update_attributes(params)
-
-  @user.update_attributes(params[:user])
-
-  #@user.destroy
-
-  @users = User.all 
-
-  redirect '/listes'
+put '/:id' do  
+   
+        @user = User.find params[:id]
+        @user.update_attributes nom: params[:nom]
+        redirect "/"
+end  
 
 
-  
 
-end
 
 
 get '/clients' do
