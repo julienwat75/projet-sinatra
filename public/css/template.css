@@ -16,3 +16,7 @@ body {
  
 	width:700px;
 }
+
+.Degrade {
+background-image:radial-gradient(white, black);
+}

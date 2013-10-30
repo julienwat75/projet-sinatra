@@ -1,0 +1,25 @@
+<h1> formulaire</h1> 
+
+<form action='/save' method='post'>
+
+    <SELECT name="lieu2" value='<%=@editable.lieu %>'>
+		<OPTION VALUE="Theatre du temple">Theatre du temple</OPTION>
+		<OPTION VALUE="Comedie bastille">Comedie bastille</OPTION>
+		<OPTION VALUE="Theatre de dix heure">Theatre de dix heure</OPTION>
+		
+	</SELECT> 
+
+
+ <input type='text' name='nom2' value='<%=@editable.nom %>'>
+  <input type="date" name="duedate2" value='<%=@editable.duedate %>'>
+ <button type='submit'> envoyer </button>
+
+
+
+
+ 
+
+
+
+
+</form>
